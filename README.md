@@ -1,4 +1,4 @@
-﻿Program Name: ZipItWebApp
+﻿Program Name: PaperWebApp
 Program Author: Ajima Master
 Student ID: 0771451
 Date Started: 2022-10-08
@@ -7,8 +7,8 @@ Date Started: 2022-10-08
 ----- Commands You Will Need To Build This Project -----
 
 1. Install-Package Microsoft.EntityFrameworkCore.SqlServer --Version 3.1
-2. add-migration ZipperApp -Context ZipperAppContext
-3. update-database -Context ZipperAppContext
+2. add-migration PaperrApp -Context PaperAppContext
+3. update-database -Context PaperAppContext
 
 
 -- 9:10PM --
@@ -22,7 +22,7 @@ view created
    -->Views/HelloWorld/Welcome.cshtml
    view created for the HelloWorldController
     **testing results: successful**
-time to add a zipper model
+time to add a paper model
 
 problem: cannot install EFCore
 solution: --Version extension
@@ -35,10 +35,10 @@ now time to *scaffold*
 
 -- 12:51AM --
 -- the date is now 2022-10-09, and after a long reset, we finally have a successful scaffold!
-  -> problem: i forgot to add the connection string for ZipperAppContext in appsettings.json
+  -> problem: i forgot to add the connection string for PaperAppContext in appsettings.json
   -> problem: was making a typo in the Startup.ConfigureServices method
   -> problem: was not making use of the -Context extension in my package manager console to choose which context i wanted to work with
-            -> -Context ZipperAppContext    solved my problem
+            -> -Context PaperAppContext    solved my problem
 
 Date Modified: 2022-10-09
 
@@ -49,7 +49,7 @@ database created
 SeedData.cs class created in Models folder
 SeedData has 10 products and their properties
 have to run to see if seeding data was successful
-        -> add-migration ZipperApp -Context ZipperAppContext
+        -> add-migration ZipperApp -Context PaperAppContext
         -> seeding: successful
 
 -- 10:00PM --
@@ -65,7 +65,7 @@ time to add Search functionality!
 Date Modified: 2022-10-10
 
 -- 3:00PM --
-I forgot to add a rating field, so I will add that next
+I debug index.chhtml for model object, so I will add that next
     -> success! users can now edit product ratings
 
 -- 3:15PM --
@@ -75,7 +75,7 @@ time for validation
 Time for the fun part!! Adding Styles!!
 
 -- 7:45PM --
-added link to my zippers page to the home screen of my web app
+added link to my paper page to the home screen of my web app
 instead of products displaying in a table, they now display in divs!!
 these divs contain all information of the product, and are displayed 3 in a row
 the footer is now dimgrey
@@ -83,9 +83,9 @@ the footer is now dimgrey
 -- GOALS FOR NEXT DAY OF DEVELOPMENT --
 - pick a cool font
 - change background colour of header
-- find some pictures of zippers
-- maybe some cool zipper animation for content
-- about employees (About Us)
+- find some pictures of zip paper or gift paper
+- maybe some cool card animation for content
+- about gifts (About Us)
     -> display in sections
     -> hard coded 
 
@@ -93,13 +93,11 @@ Date Modified: 2022-10-11
 
 -- 8:35AM --
 
-Links for employee pictures 
-Roy - https://cdn.comedy.co.uk/images/library/people/180x200/t/the_it_crowd_roy.jpg
-Maurice Moss - https://cdn.comedy.co.uk/images/library/people/180x200/t/the_it_crowd_moss.jpg
-Jen Barber - https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRm7u2nf-llL4Xm54jqrAvl2ZsSGSbSQQG9fA&usqp=CAU
+Links for paper pictures 
+https://www.bing.com/images/search?view=detailV2&ccid=trDnBmXp&id=1FED910E8B10FFACCE356B69E9B4940718055502&thid=OIP.trDnBmXpL_SAl5HW5EeizwHaFn&mediaurl=https%3a%2f%2fwww.paperpapers.com%2fnews%2fwp-content%2fuploads%2f2018%2f06%2f61qSdyDYbZL._SL1185_.jpg&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.b6b0e70665e92ff4809791d6e447a2cf%3frik%3dAlUFGAeUtOlpaw%26pid%3dImgRaw%26r%3d0&exph=899&expw=1185&q=paper&simid=608032572081444944&FORM=IRPRST&ck=75A6265821E42FEE5F78D7FBD830F111&selectedIndex=6&ajaxhist=0&ajaxserp=0
 
-i have added the team shot and the team desciption to the About Us page
-i have added my team members and their pictures and job descriptions to the About Us page.
+i have added the gift card and the paper types to the About Us page
+
 
 Date Modified: 2022-10-12
 
@@ -109,8 +107,6 @@ added some content to my homepage
 fixed my about us page layout 
 made a mobile view for the About Us page
 
-Facotry Image Source Link - https://fshoq.com/free-photos/p/232/abandoned-factory-in-hanover
-Home Page Zipper Image Source Link - https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Zipper.svg/1283px-Zipper.svg.png
 
 Date Modified: 2022-10-13
 
@@ -119,7 +115,7 @@ lets add product images!!
 product images are seeded into database only! users cannot create product with images. maybe another project
 
 -- 10:15PM -- 
-I have changed the view for the product page once again. Now it matches the style of the emplyee page.
+I have changed the view for the home page once again.
 
 -- 10:30PM --
 Time to add the last round of styles
