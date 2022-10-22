@@ -1,45 +1,67 @@
-@model ZipperApp.Models.ZipperCategoryViewModel
+ipperPaper.Models.ZipperTypeViewModel
 
 @{
-    ViewData["Title"] = "Zippers For Sale";
+    ViewData["Title"] = "Index";
 }
 
-<h1>Zip It!</h1>
+<h1>Index</h1>
 
 <p>
     <a asp-action="Create">Create New</a>
 </p>
 <form asp-controller="Zippers" asp-action="Index" method="get">
-    <p>
-        <select asp-for="ZipperCategory" asp-items="Model.Category">
+ <select asp-for="ZipperType" asp-items="Model.Type">
             <option value="">All</option>
         </select>
 
-        Name: <input type="text" asp-for="SearchString" />
-        <input type="submit" value="Filter" /> @*Filter search by category*@
+    <p>
+        Title: <input type="text" name="SearchString" />
+        <input type="submit" value="Filter" />
     </p>
 </form>
-
-@*I have decided to place my products in divs rather than a table to give it more of an e-commerce feel*@
-<div class="row">
-    @foreach (var item in Model.Zippers)
-     {
-        <div class="displaystyle">
-             <div class="card">
-                <img class="productImg" src="~/img/zippers/@item.ProductImage" /> @*displays corresponding product images*@
-                <div class="container2">
-                    <p><strong>@Html.DisplayFor(modelItem => item.Name)</strong></p>
-                    <p><strong>@Html.DisplayNameFor(model => model.Zippers[0].Category): </strong>@Html.DisplayFor(modelItem => item.Category)</p>
-                    <p><strong>@Html.DisplayNameFor(model => model.Zippers[0].Material): </strong>@Html.DisplayFor(modelItem => item.Material)</p>
-                    <p><strong>@Html.DisplayNameFor(model => model.Zippers[0].TeethSize): </strong>@Html.DisplayFor(modelItem => item.TeethSize)</p>
-                    <p><strong>@Html.DisplayNameFor(model => model.Zippers[0].Colour): </strong>@Html.DisplayFor(modelItem => item.Colour)</p>
-                    <p><strong>@Html.DisplayNameFor(model => model.Zippers[0].Price): </strong>@Html.DisplayFor(modelItem => item.Price)</p>
-                    <p><strong>@Html.DisplayNameFor(model => model.Zippers[0].Rating): </strong>@Html.DisplayFor(modelItem => item.Rating)</p>
-                    <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                    <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                    <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-                </div> @*Instead of displaying data in a tbale, products now get their own div. This gives the site more of an ecommerce feel.*@
-            </div>
-        </div>
-     }
-</div>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Title)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ReleaseDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Type)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Price)
+            </th>
+             @Html.DisplayNameFor(model => model.Zippers[0].Rating)
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Zippers) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Title)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ReleaseDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Type)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Price)
+            </td>
+            <td>
+            @Html.DisplayFor(modelItem => item.Rating)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
