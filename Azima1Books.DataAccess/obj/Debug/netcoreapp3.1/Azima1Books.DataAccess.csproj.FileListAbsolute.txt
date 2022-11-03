@@ -1,0 +1,10 @@
+C:\Users\maste\source\repos\Azima1Books.DataAccess\bin\Debug\netcoreapp3.1\Azima1Books.DataAccess.deps.json
+C:\Users\maste\source\repos\Azima1Books.DataAccess\bin\Debug\netcoreapp3.1\Azima1Books.DataAccess.dll
+C:\Users\maste\source\repos\Azima1Books.DataAccess\bin\Debug\netcoreapp3.1\Azima1Books.DataAccess.pdb
+C:\Users\maste\source\repos\Azima1Books.DataAccess\obj\Debug\netcoreapp3.1\Azima1Books.DataAccess.csproj.AssemblyReference.cache
+C:\Users\maste\source\repos\Azima1Books.DataAccess\obj\Debug\netcoreapp3.1\Azima1Books.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\maste\source\repos\Azima1Books.DataAccess\obj\Debug\netcoreapp3.1\Azima1Books.DataAccess.AssemblyInfoInputs.cache
+C:\Users\maste\source\repos\Azima1Books.DataAccess\obj\Debug\netcoreapp3.1\Azima1Books.DataAccess.AssemblyInfo.cs
+C:\Users\maste\source\repos\Azima1Books.DataAccess\obj\Debug\netcoreapp3.1\Azima1Books.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\maste\source\repos\Azima1Books.DataAccess\obj\Debug\netcoreapp3.1\Azima1Books.DataAccess.dll
+C:\Users\maste\source\repos\Azima1Books.DataAccess\obj\Debug\netcoreapp3.1\Azima1Books.DataAccess.pdb

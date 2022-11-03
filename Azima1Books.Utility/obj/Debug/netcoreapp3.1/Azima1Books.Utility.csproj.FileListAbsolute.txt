@@ -1,0 +1,10 @@
+C:\Users\maste\source\repos\Azima1Books.Utility\bin\Debug\netcoreapp3.1\Azima1Books.Utility.deps.json
+C:\Users\maste\source\repos\Azima1Books.Utility\bin\Debug\netcoreapp3.1\Azima1Books.Utility.dll
+C:\Users\maste\source\repos\Azima1Books.Utility\bin\Debug\netcoreapp3.1\Azima1Books.Utility.pdb
+C:\Users\maste\source\repos\Azima1Books.Utility\obj\Debug\netcoreapp3.1\Azima1Books.Utility.csproj.AssemblyReference.cache
+C:\Users\maste\source\repos\Azima1Books.Utility\obj\Debug\netcoreapp3.1\Azima1Books.Utility.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\maste\source\repos\Azima1Books.Utility\obj\Debug\netcoreapp3.1\Azima1Books.Utility.AssemblyInfoInputs.cache
+C:\Users\maste\source\repos\Azima1Books.Utility\obj\Debug\netcoreapp3.1\Azima1Books.Utility.AssemblyInfo.cs
+C:\Users\maste\source\repos\Azima1Books.Utility\obj\Debug\netcoreapp3.1\Azima1Books.Utility.csproj.CoreCompileInputs.cache
+C:\Users\maste\source\repos\Azima1Books.Utility\obj\Debug\netcoreapp3.1\Azima1Books.Utility.dll
+C:\Users\maste\source\repos\Azima1Books.Utility\obj\Debug\netcoreapp3.1\Azima1Books.Utility.pdb
